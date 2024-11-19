@@ -1,9 +1,5 @@
 package zhouyi
 
-import (
-	"os"
-)
-
 // Gua type Gua
 type Gua struct {
 	Tuan string
@@ -596,7 +592,7 @@ func Text() []Gua {
 }
 
 // ReGuaNu 返回卦 序号
-func ReGuaNu(m, n, l []uint, f *os.File, yijing []Gua) uint {
+func ReGuaNu(l []uint, yijing []Gua) uint {
 	var a uint
 
 	switch {

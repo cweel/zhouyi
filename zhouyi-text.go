@@ -4,13 +4,13 @@ import (
 	"os"
 )
 
-//Gua type Gua
+// Gua type Gua
 type Gua struct {
 	Tuan string
 	Xi   [6]string
 }
 
-//Text 定义文本
+// Text 定义文本
 func Text() []Gua {
 	var yi = make([]Gua, 64)
 	//乾 经文
@@ -262,7 +262,7 @@ func Text() []Gua {
 	yi[27].Xi[1] = "九二：枯杨生稊，老夫得其女妻，无不利。 象曰：老夫女妻，过以相与也。"
 	yi[27].Xi[2] = "九三：栋桡，凶。 象曰：栋桡之凶，不可以有辅也。"
 	yi[27].Xi[3] = "九四：栋隆，吉，有它吝。 象曰：栋隆之吉，不桡乎下也。"
-	yi[27].Xi[4] = "九五：枯杨生华，老妇得士夫，无咎无誉。 象曰：枯杨生华，何可久也。老妇士夫，亦 可丑也。"
+	yi[27].Xi[4] = "九五：枯杨生华，老妇得士夫，无咎无誉。 象曰：枯杨生华，何可久也。老妇士夫，亦可丑也。"
 	yi[27].Xi[5] = "上六：过涉灭顶，凶，无咎。 象曰：过涉之凶，不可咎也。"
 
 	//坎
@@ -595,7 +595,7 @@ func Text() []Gua {
 
 }
 
-//ReGuaNu 返回卦 序号
+// ReGuaNu 返回卦 序号
 func ReGuaNu(m, n, l []uint, f *os.File, yijing []Gua) uint {
 	var a uint
 
